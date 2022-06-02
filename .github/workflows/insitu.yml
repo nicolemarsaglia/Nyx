@@ -24,7 +24,7 @@ jobs:
         . /ascent_docker_setup_env.sh
         cmake -S . -B build   \
             -DNyx_HYRDO=ON \
-            -DUSE_ASCENT_INSITU = TRUE \
+            -DUSE_ASCENT_INSITU=TRUE \
             -DNyx_HEATCOOL=ON 
         cmake --build build --parallel 2
     - name: Build
